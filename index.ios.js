@@ -1,34 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import { AppRegistry } from 'react-native';
+import App from './src/containers/App';
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-
-export default class ReactNativeWeibo extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>An Weibo Demo</Text>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  }, 
-});
-
-AppRegistry.registerComponent('ReactNativeWeibo', () => ReactNativeWeibo);
+AppRegistry.registerComponent('ReactNativeWeibo', () => App);
