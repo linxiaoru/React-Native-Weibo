@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Button,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  TouchableHighlight,
-  Text,
-} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -104,27 +97,11 @@ const Navigator = TabNavigator(
         backgroundColor: '#eee',
         borderBottomWidth: 0
       },
-      iconStyle: {
-        width: 22,
-        height: 22,
-      }
     },
-
-
   }
 );
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: Platform.OS === 'ios' ? 20 : 0,
-  },
-  button: {
-    width: 200,
-    height: 50,
-    marginVertical: 10,
-    backgroundColor: '#ff5542',
-    alignSelf: 'center'
-  },
   tintColor: {
     color: '#999'
   }
